@@ -1,0 +1,59 @@
+.about {
+  margin-bottom: 100px;
+  .title {
+    padding-top: 100px;
+    text-align: right;
+    color: #a5a1ff;
+  }
+  .box {
+    width: 90vw;
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+
+    .left {
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      width: 55%;
+      background-color: #a5a1ff;
+      color: #000;
+      height: 300px;
+      border-radius: 140px;
+      text-align: center;
+      line-height: 300px;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      position: absolute;
+      left: calc(50% - 24.75vw);
+      z-index: 99;
+      transition: 0.6s;
+    }
+    .left.open {
+      left: 0;
+    }
+    .right {
+      width: 55%;
+      background-color: #1b1b1b;
+      height: 300px;
+      border-radius: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: calc(50% - 24.75vw);
+      transition: 0.6s;
+      ul {
+        width: 550px;
+        li {
+          font-size: 1rem;
+          padding: 5px;
+          text-align: right;
+        }
+      }
+    }
+    .right.open {
+      right: 0;
+      width: 65%;
+    }
+  }
+}

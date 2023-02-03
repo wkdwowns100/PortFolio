@@ -1,0 +1,27 @@
+footer {
+  .goTop {
+    background: #fff url(../images/up.svg) no-repeat 50% / cover;
+    color: #000;
+    text-align: center;
+    line-height: 55px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 50px;
+    border-radius: 25px;
+    text-indent: 9999px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: none;
+  }
+  .onBtn {
+    display: block;
+  }
+  .copy {
+    text-align: right;
+    padding: 10px 50px;
+  }
+}

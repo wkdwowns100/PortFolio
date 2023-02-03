@@ -1,0 +1,96 @@
+.project {
+  height: 140vh;
+
+  .title {
+    padding-top: 100px;
+    color: #fff480;
+  }
+  .projectInner {
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    letter-spacing: 1px;
+    font-weight: medium;
+    width: 95vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    .projectBox {
+      position: relative;
+      border-radius: 100px;
+      transition: 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        scale: 0.95;
+      }
+      .num {
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        font-size: 1.5rem;
+      }
+      .projectName {
+        font-weight: bold;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        font-size: 1.8rem;
+      }
+      .category {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        font-size: 1.3rem;
+      }
+      .tag {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        font-size: 1rem;
+        span {
+          padding: 3px 15px;
+          margin: 5px;
+          border-radius: 25px;
+          border: 1px solid #000;
+          &:hover {
+            background-color: #000;
+            color: #fff;
+          }
+        }
+      }
+      .img {
+        width: 30%;
+        text-align: center;
+      }
+    }
+    .project1 {
+      background-color: #fff;
+      color: #000;
+      grid-row: 1 / 3;
+    }
+    .project2 {
+      background-color: #342b58;
+      color: #fff;
+      .tag {
+        span {
+          border-color: #fff;
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
+    .project3 {
+      background-color: #cbe5ff;
+      color: #000;
+    }
+    .project4 {
+      background-color: #fff480;
+      color: #000;
+      grid-column: 1 / 3;
+    }
+  }
+}

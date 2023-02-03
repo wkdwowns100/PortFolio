@@ -1,0 +1,96 @@
+header {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 999;
+  background-color: #1b1b1b;
+  border-radius: 0 0 50px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.4s;
+  ul {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    li {
+      a {
+        cursor: pointer;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        height: 100%;
+        line-height: 80px;
+      }
+      &:hover {
+        color: #a5a1ff;
+      }
+    }
+  }
+  .more {
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span {
+      margin: 4px 0;
+      display: block;
+      background-color: #fff;
+      height: 2px;
+      text-indent: 9999px;
+      width: 30px;
+      border-radius: 2px;
+      transition: 0.4s;
+      z-index: 9999;
+    }
+  }
+  .open {
+    span:nth-child(1) {
+      width: 15px;
+      transform: rotateZ(45deg) translateX(15px) translateY(-9px);
+    }
+    span:nth-child(3) {
+      width: 15px;
+      transform: rotateZ(-45deg) translateX(15px) translateY(9px);
+    }
+    .on {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #1b1b1b;
+      padding: 100px;
+      margin: 0 auto;
+      ul {
+        margin: 0 100px;
+        display: block;
+        li {
+          margin: 20px;
+          a {
+            cursor: pointer;
+            font-size: 5rem;
+            width: 60%;
+            border-bottom: 3px solid #fff;
+            padding: 30px;
+            transition: 0.2s;
+            &:hover {
+              color: #a5a1ff;
+              border-color: #a5a1ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.nav {
+  transition: 0.4s;
+  left: 100vw;
+}
