@@ -12,3 +12,13 @@ body {
     margin: 0 100px 50px;
   }
 }
+/* 스크롤바 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a5a1ff;
+  border-radius: 10px;
+}

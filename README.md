@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# 포트폴리오의 구성 및 설명
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 포트폴리오 주소 : <https://wkdwowns100.github.io/PortFolio/>
 
-## Available Scripts
+## 포트폴리오의 목적
 
-In the project directory, you can run:
+포트폴리오 제작을 통해 간단한 자기소개 및 나의 기술을 소개
 
-### `npm start`
+## 포트폴리오의 구성
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `디렉토리 구조`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="./structure.png" width="450px" alt="디렉토리구조"></img>
 
-### `npm test`
+- 리액트를 이용하여 layout>header, home, about, project, contact의
+  5개 컴포넌트로 분리하여 작성, 그 외에 세부 컴포넌트 들은 components 내에 작성
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 사용한 기술
 
-### `npm run build`
+- React
+- SCSS
+- JavaScript
+- NodeJS
+- tool: GitHub(호스팅 및 백업), Visual Studio Code(문서작성 및 수정), Figma(와이어프레임 및 프로토타입 제작)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 페이지 구성
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 1개의 페이지 안에 home, about, project, contact 의 4가지 구역으로 구성함
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ### `Home`
 
-### `npm run eject`
+  - header영역에 Navigation 및 더보기 작성, 더보기를 통한 큰 화면의 Navigation의 경우 JS를 이용하여 클릭이벤트 사용
+  - flex, position을 이용한 레이아웃 구성
+  - SCSS를 이용한 3d 애니메이션 사용 및 JS를 이용한 마우스 이벤트
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ### `About`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - 스크롤 이벤트를 이용한 오브젝트 이동
+  - position을 이용한 위치 조정
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ### `Project`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  - 마우스 이벤트를 이용한 크기변경 및 외부링크
+  - grid를 이용한 레이아웃 구성
 
-## Learn More
+  ### `Contact`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - flex를 이용한 배치
+  - SCSS를 이용한 마우스 hover 이벤트 및 외부링크
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 문제 및 해결
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- full page scroll을 적용하고자 하였으나 일부 component의 세로 크기가 다르고 스크롤이벤트가 들어가 있어 쉽게 적용하지 못함
+- 다른 프로젝트에서 더 적절하게 적용해 볼 예정

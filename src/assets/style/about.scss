@@ -13,7 +13,7 @@
 
     .left {
       font-family: "Spoqa Han Sans Neo", "sans-serif";
-      width: 55%;
+      width: 50%;
       background-color: #a5a1ff;
       color: #000;
       height: 300px;
@@ -24,15 +24,15 @@
       font-weight: bold;
       margin-bottom: 10px;
       position: absolute;
-      left: calc(50% - 24.75vw);
+      left: calc(50% - 22.5vw);
       z-index: 99;
       transition: 0.6s;
     }
     .left.open {
-      left: 0;
+      left: 2vw;
     }
     .right {
-      width: 55%;
+      width: 50%;
       background-color: #1b1b1b;
       height: 300px;
       border-radius: 140px;
@@ -40,19 +40,21 @@
       justify-content: center;
       align-items: center;
       position: absolute;
-      right: calc(50% - 24.75vw);
+      right: calc(50% - 22.5vw);
       transition: 0.6s;
       ul {
-        width: 550px;
+        width: 600px;
+        position: absolute;
+        right: 10%;
         li {
-          font-size: 1rem;
+          font-size: 1.1rem;
           padding: 5px;
           text-align: right;
         }
       }
     }
     .right.open {
-      right: 0;
+      right: 2vw;
       width: 65%;
     }
   }

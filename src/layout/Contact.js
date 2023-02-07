@@ -5,8 +5,8 @@ function Contact() {
   return (
     <article className="contact" id="contact">
       <div className="contactBox">
+        <h1 className="">"중요한것은 꺾이지 않는 마음!"</h1>
         <div className="leftTxt">
-          <h1 className="">"중요한것은 꺾이지 않는 마음!"</h1>
           <div className="middleTxt">
             <h2>포기하지 않고 끊임없이</h2>
             <h2>도전하고 노력하는</h2>
@@ -31,11 +31,11 @@ function Contact() {
           </div>
         </div>
         <div className="rightTxt">
-          My Career
+          Cube_J
           <ul className="history">
             <li>1993.07.29</li>
-            <li></li>
-            <li></li>
+            <li>ISTJ</li>
+            <li>충북대학교 졸업</li>
             <li>22-23 프론트엔드 개발 및 실무프로젝트 구현과정 수료</li>
           </ul>
         </div>

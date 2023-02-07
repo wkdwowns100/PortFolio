@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-three/fiber": "^8.10.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +15,8 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "sass": "^1.58.0",
+    "three": "^0.149.0",
+    "use-cannon": "^0.5.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
