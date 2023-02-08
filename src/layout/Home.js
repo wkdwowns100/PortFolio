@@ -29,7 +29,7 @@ function Home() {
         -posY / 20
       }px)`;
     });
-  }, []);
+  }, [posX, posY]);
 
   return (
     <article className="home" id="home">

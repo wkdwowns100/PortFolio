@@ -10,7 +10,7 @@
 
 ### `디렉토리 구조`
 
-<img src="./structure.png" width="450px" alt="디렉토리구조"></img>
+<img src="./structure.png" width="600px" alt="디렉토리구조"></img>
 
 - 리액트를 이용하여 layout>header, home, about, project, contact의
   5개 컴포넌트로 분리하여 작성, 그 외에 세부 컴포넌트 들은 components 내에 작성
@@ -52,7 +52,7 @@
 
 - full page scroll을 적용하고자 하였으나 일부 component의 세로 크기가 다르고 스크롤이벤트가 들어가 있어 쉽게 적용하지 못함
   - 다른 프로젝트에서 더 적절하게 적용해 볼 예정
-- 마우스 좌표에 따른 이펙트를 넣고자 useEffect를 사용하였으나 작동하지 않았다.
+- 마우스 좌표에 따른 이펙트를 넣고자 useEffect를 사용하였으나 작동하지 않음.
 
 ```
   useEffect(() => {
@@ -77,7 +77,7 @@
   }, []);
 ```
 
-- useCallback으로 변하는좌표를 콜백하여 해결하였다
+- useCallback으로 변하는좌표를 콜백하여 해결
 
 ```
 useEffect(() => {
