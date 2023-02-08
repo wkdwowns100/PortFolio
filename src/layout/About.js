@@ -11,7 +11,7 @@ function About() {
   ];
   const javascript = [
     { id: 1, text: "ES6+ 기반의 웹 사이트 구현" },
-    { id: 2, text: "이벤트 메소드를 통한 효과 구현" },
+    { id: 2, text: "이벤트 메소드를 통한 마우스, 스크롤, 커서 등의 효과 구현" },
     {
       id: 3,
       text: `setTimeout 및 async, await 함수를
@@ -19,12 +19,13 @@ function About() {
     },
     { id: 4, text: "JavaScript를 이용한 DOM 제어" },
     { id: 5, text: "Open API 사용" },
+    { id: 6, text: "node js를 이용한 firebase 실행 및 데이터관리" },
   ];
   const react = [
     { id: 1, text: "함수 스타일의 컴포넌트 작성" },
     {
       id: 2,
-      text: "useState, useEffect, useRef 등의 Hook 활용",
+      text: "useState, useEffect, useNavigate, useRef 등의 Hook 활용",
     },
     {
       id: 3,
@@ -46,7 +47,7 @@ function About() {
     { id: 2, text: "GitHub를 이용한 작업물 저장 및 버전 관리" },
     { id: 3, text: "branch를 이용한 문서공유 및 협업" },
     { id: 4, text: "GitHub를 이용한 웹사이트 호스팅" },
-    { id: 5, text: "react에서의 build로 직접 GitHub 백업" },
+    { id: 5, text: "react에서의 build 및 deploy로 직접 호스팅 및 백업" },
   ];
 
   const [useScroll, setUseScroll] = useState(0);
@@ -64,7 +65,7 @@ function About() {
       <h1 className="title">What can I do?</h1>
       <div className="box htmlCss">
         <div className={useScroll < 500 ? "left" : "left open"}>
-          HTML5 & CSS3
+          <span>HTML5 & CSS3</span>
         </div>
         <div className={useScroll < 500 ? "right" : "right open"}>
           <ul>
@@ -75,7 +76,9 @@ function About() {
         </div>
       </div>
       <div className="box javascript">
-        <div className={useScroll < 800 ? "left" : "left open"}>JavaScript</div>
+        <div className={useScroll < 800 ? "left" : "left open"}>
+          <span>JavaScript (ES6+)</span>
+        </div>
         <div className={useScroll < 800 ? "right" : "right open"}>
           <ul>
             {javascript.map((item) => (
@@ -85,7 +88,13 @@ function About() {
         </div>
       </div>
       <div className="box react">
-        <div className={useScroll < 1100 ? "left" : "left open"}>REACT</div>
+        <div className={useScroll < 1100 ? "left" : "left open"}>
+          <span>
+            SPA Framework /
+            <br />
+            Library React
+          </span>
+        </div>
         <div className={useScroll < 1100 ? "right" : "right open"}>
           <ul>
             {react.map((item) => (
@@ -96,7 +105,7 @@ function About() {
       </div>
       <div className="box graphic">
         <div className={useScroll < 1400 ? "left" : "left open"}>
-          Graphics & Design
+          <span>Graphics & Design</span>
         </div>
         <div className={useScroll < 1400 ? "right" : "right open"}>
           <ul>
@@ -108,7 +117,7 @@ function About() {
       </div>
       <div className="box git">
         <div className={useScroll < 1700 ? "left" : "left open"}>
-          Git & Github
+          <span>Git & Github</span>
         </div>
         <div className={useScroll < 1700 ? "right" : "right open"}>
           <ul>

@@ -18,15 +18,19 @@
       color: #000;
       height: 300px;
       border-radius: 140px;
-      text-align: center;
-      line-height: 300px;
-      font-size: 4rem;
-      font-weight: bold;
       margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       left: calc(50% - 22.5vw);
       z-index: 99;
       transition: 1s;
+      span {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+      }
     }
     .left.open {
       left: 2vw;
