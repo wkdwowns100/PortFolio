@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import "../assets/style/footer.scss";
 
 function Footer() {
-  const [scrollDown, setScrollDown] = useState(0);
+  const [handleScroll, setHandleScroll] = useState(0);
   const onScroll = () => {
-    setScrollDown(window.scrollY);
+    setHandleScroll(window.scrollY);
   };
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <footer>
-      <div className={scrollDown < 700 ? "goTop" : "goTop onBtn"}>
+      <div className={handleScroll < 700 ? "goTop" : "goTop onBtn"}>
         <Link to="home" smooth={true}>
           TOP
         </Link>

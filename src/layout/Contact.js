@@ -1,12 +1,12 @@
-import Typed from "typed.js";
 import { useEffect, useRef } from "react";
-import "../assets/style/contact.scss";
+import Typed from "typed.js";
 import kakaoQR from "../assets/images/kakaoQR.jpg";
+import "../assets/style/contact.scss";
 
 function Contact() {
-  const el = useRef(null);
+  const onText = useRef(null);
   useEffect(() => {
-    const typed = new Typed(el.current, {
+    const typed = new Typed(onText.current, {
       strings: [
         `"새로운 도전을 시작합니다"`,
         `"Slow and Steady"`,
@@ -27,7 +27,7 @@ function Contact() {
     <article className="contact" id="contact">
       <div className="contactBox">
         <h1>
-          <span ref={el}></span>{" "}
+          <span ref={onText}></span>{" "}
         </h1>
         <div className="leftTxt">
           <div className="middleTxt">

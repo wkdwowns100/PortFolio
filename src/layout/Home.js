@@ -4,20 +4,19 @@ import { ReactComponent as Myname } from "../assets/images/name.svg";
 import "../assets/style/home.scss";
 
 function Home() {
-  const tag1 = useRef(null);
-  const tag2 = useRef(null);
-  const tag3 = useRef(null);
+  const onTag1 = useRef(null);
+  const onTag2 = useRef(null);
+  const onTag3 = useRef(null);
 
   const cubeTxt1 = document.querySelector(".cubeTxt1");
   const cubeTxt2 = document.querySelector(".cubeTxt2");
   const cubeTxt3 = document.querySelector(".cubeTxt3");
 
-  const [posX, setPosX] = useState(0);
-  const [posY, setPosY] = useState(0);
+  const [handleX, setHandleX] = useState(0);
+  const [handleY, setHandleY] = useState(0);
 
-  const el = useRef(null);
   useEffect(() => {
-    const typed1 = new Typed(tag1.current, {
+    const typed1 = new Typed(onTag1.current, {
       strings: ["#끊임없는_도전", "#새로운_도전"],
       startDelay: 300,
       typeSpeed: 100,
@@ -25,7 +24,7 @@ function Home() {
       backDelay: 1000,
       loop: true,
     });
-    const typed2 = new Typed(tag2.current, {
+    const typed2 = new Typed(onTag2.current, {
       strings: ["#성실하게", "#책임감있게"],
       startDelay: 300,
       typeSpeed: 150,
@@ -33,7 +32,7 @@ function Home() {
       backDelay: 1000,
       loop: true,
     });
-    const typed3 = new Typed(tag3.current, {
+    const typed3 = new Typed(onTag3.current, {
       strings: ["#슬로우스타터", "#꾸준하게"],
       startDelay: 300,
       typeSpeed: 150,
@@ -51,24 +50,32 @@ function Home() {
 
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
-      setPosX(e.clientX);
-      setPosY(e.clientY);
-      cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
-      cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
-      cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
-        -posY / 20
+      setHandleX(e.clientX);
+      setHandleY(e.clientY);
+      cubeTxt1.style.transform = `translate(${handleX / 30}px, ${
+        handleY / 20
+      }px)`;
+      cubeTxt2.style.transform = `translate(${-handleY / -20}px, ${
+        handleX / 40
+      }px)`;
+      cubeTxt3.style.transform = `translate(${30 - handleX / 20}px, ${
+        -handleY / 20
       }px)`;
     });
     return window.removeEventListener("mousemove", (e) => {
-      setPosX(e.clientX);
-      setPosY(e.clientY);
-      cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
-      cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
-      cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
-        -posY / 20
+      setHandleX(e.clientX);
+      setHandleY(e.clientY);
+      cubeTxt1.style.transform = `translate(${handleX / 30}px, ${
+        handleY / 20
+      }px)`;
+      cubeTxt2.style.transform = `translate(${-handleY / -20}px, ${
+        handleX / 40
+      }px)`;
+      cubeTxt3.style.transform = `translate(${30 - handleX / 20}px, ${
+        -handleY / 20
       }px)`;
     });
-  }, [posX, posY]);
+  }, [posX, handleY]);
 
   return (
     <article className="home" id="home">
@@ -94,15 +101,15 @@ function Home() {
           </div>
           <div className="cubeTxt">
             <div className="cubeTxt1">
-              <span ref={tag1}></span>
+              <span ref={onTag1}></span>
               {""}
             </div>
             <div className="cubeTxt2">
-              <span ref={tag2}></span>
+              <span ref={onTag2}></span>
               {""}
             </div>
             <div className="cubeTxt3">
-              <span ref={tag3}></span>
+              <span ref={onTag3}></span>
               {""}
             </div>
           </div>
