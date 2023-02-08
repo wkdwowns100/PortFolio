@@ -14,7 +14,8 @@ function About() {
     { id: 2, text: "이벤트 메소드를 통한 효과 구현" },
     {
       id: 3,
-      text: " setTimeout, setInterval 및 async, await 함수를 활용한 비동기 작업",
+      text: `setTimeout 및 async, await 함수를
+      활용한 비동기 작업`,
     },
     { id: 4, text: "JavaScript를 이용한 DOM 제어" },
     { id: 5, text: "Open API 사용" },

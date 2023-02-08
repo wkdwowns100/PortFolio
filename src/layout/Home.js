@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ReactComponent as Myname } from "../assets/images/name.svg";
 import "../assets/style/home.scss";
 
@@ -7,23 +7,29 @@ function Home() {
   const cubeTxt2 = document.querySelector(".cubeTxt2");
   const cubeTxt3 = document.querySelector(".cubeTxt3");
 
+  const [posX, setPosX] = useState(0);
+  const [posY, setPosY] = useState(0);
+
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
-      let x = e.clientX;
-      let y = e.clientY;
-      cubeTxt1.style.transform = `translate(${x / 30}px, ${y / 20}px)`;
-      cubeTxt2.style.transform = `translate(${-y / -20}px, ${x / 40}px)`;
-      cubeTxt3.style.transform = `translate(${30 - x / 20}px, ${-y / 20}px)`;
+      setPosX(e.clientX);
+      setPosY(e.clientY);
+      cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
+      cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
+      cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
+        -posY / 20
+      }px)`;
     });
     return window.removeEventListener("mousemove", (e) => {
-      let x = e.clientX;
-      let y = e.clientY;
-      console.log(x, y);
-      cubeTxt1.style.transform = `translate(${x / 30}px, ${y / 20}px)`;
-      cubeTxt2.style.transform = `translate(${-y / -20}px, ${x / 40}px)`;
-      cubeTxt3.style.transform = `translate(${30 - x / 20}px, ${-y / 20}px)`;
+      setPosX(e.clientX);
+      setPosY(e.clientY);
+      cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
+      cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
+      cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
+        -posY / 20
+      }px)`;
     });
-  }, []);
+  }, [posX, posY]);
 
   return (
     <article className="home" id="home">
