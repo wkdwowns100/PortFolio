@@ -75,7 +75,7 @@ function Home() {
         -handleY / 20
       }px)`;
     });
-  }, [posX, handleY]);
+  }, [handleX, handleY]);
 
   return (
     <article className="home" id="home">
