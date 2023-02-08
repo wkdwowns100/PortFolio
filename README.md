@@ -51,4 +51,53 @@
 ## 문제 및 해결
 
 - full page scroll을 적용하고자 하였으나 일부 component의 세로 크기가 다르고 스크롤이벤트가 들어가 있어 쉽게 적용하지 못함
-- 다른 프로젝트에서 더 적절하게 적용해 볼 예정
+  - 다른 프로젝트에서 더 적절하게 적용해 볼 예정
+- 마우스 좌표에 따른 이펙트를 넣고자 useEffect를 사용하였으나 작동하지 않았다.
+
+```
+  useEffect(() => {
+    window.addEventListener("mousemove", (e) => {
+      setPosX(e.clientX);
+      setPosY(e.clientY);
+      cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
+      cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
+      cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
+        -posY / 20
+      }px)`;
+    });
+    return window.removeEventListener("mousemove", (e) => {
+      setPosX(e.clientX);
+      setPosY(e.clientY);
+      cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
+      cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
+      cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
+        -posY / 20
+      }px)`;
+    });
+  }, []);
+```
+
+- useCallback으로 변하는좌표를 콜백하여 해결하였다
+
+```
+useEffect(() => {
+  window.addEventListener("mousemove", (e) => {
+    setPosX(e.clientX);
+    setPosY(e.clientY);
+    cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
+    cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
+    cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
+      -posY / 20
+    }px)`;
+  });
+  return window.removeEventListener("mousemove", (e) => {
+    setPosX(e.clientX);
+    setPosY(e.clientY);
+    cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
+    cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
+    cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
+      -posY / 20
+    }px)`;
+  });
+}, [posX, posY]);
+```
