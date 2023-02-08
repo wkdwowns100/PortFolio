@@ -11,22 +11,17 @@ function Home() {
     window.addEventListener("mousemove", (e) => {
       let x = e.clientX;
       let y = e.clientY;
-      console.log(x, y);
-      cubeTxt1.style.transform = `translate(${x / 60}px, ${y / 50}px)`;
-      cubeTxt2.style.transform = `translate(${-y / -80}px, ${x / 80}px)`;
-      cubeTxt3.style.transform = `translate(${30 - x / 50}px, ${
-        40 - y / 50
-      }px)`;
+      cubeTxt1.style.transform = `translate(${x / 30}px, ${y / 20}px)`;
+      cubeTxt2.style.transform = `translate(${-y / -20}px, ${x / 40}px)`;
+      cubeTxt3.style.transform = `translate(${30 - x / 20}px, ${-y / 20}px)`;
     });
     return window.removeEventListener("mousemove", (e) => {
       let x = e.clientX;
       let y = e.clientY;
       console.log(x, y);
-      cubeTxt1.style.transform = `translate(${x / 60}px, ${y / 50}px)`;
-      cubeTxt2.style.transform = `translate(${-y / -80}px, ${x / 80}px)`;
-      cubeTxt3.style.transform = `translate(${30 - x / 50}px, ${
-        40 - y / 50
-      }px)`;
+      cubeTxt1.style.transform = `translate(${x / 30}px, ${y / 20}px)`;
+      cubeTxt2.style.transform = `translate(${-y / -20}px, ${x / 40}px)`;
+      cubeTxt3.style.transform = `translate(${30 - x / 20}px, ${-y / 20}px)`;
     });
   }, []);
 
