@@ -10,7 +10,7 @@
 
 ### `디렉토리 구조`
 
-<img src="./structure.png" width="600px" alt="디렉토리구조"></img>
+<img src="./directoryStructure.png" width="600px" alt="디렉토리구조"></img>
 
 - layout 폴더 내에 Header, Home, About, Project, Contact, Footer의
   6개 컴포넌트로 분리하여 작성
