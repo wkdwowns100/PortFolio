@@ -16,6 +16,7 @@
     "react-scroll": "^1.8.9",
     "sass": "^1.58.0",
     "three": "^0.149.0",
+    "typed.js": "^2.0.12",
     "use-cannon": "^0.5.3",
     "web-vitals": "^2.1.4"
   },

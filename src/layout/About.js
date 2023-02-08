@@ -64,10 +64,10 @@ function About() {
     <article className="about" id="about">
       <h1 className="title">What can I do?</h1>
       <div className="box htmlCss">
-        <div className={useScroll < 500 ? "left" : "left open"}>
+        <div className={useScroll < 600 ? "left" : "left open"}>
           <span>HTML5 & CSS3</span>
         </div>
-        <div className={useScroll < 500 ? "right" : "right open"}>
+        <div className={useScroll < 600 ? "right" : "right open"}>
           <ul>
             {htmlCss.map((item) => (
               <li key={item.id}>{item.text}</li>
@@ -76,10 +76,10 @@ function About() {
         </div>
       </div>
       <div className="box javascript">
-        <div className={useScroll < 800 ? "left" : "left open"}>
+        <div className={useScroll < 900 ? "left" : "left open"}>
           <span>JavaScript (ES6+)</span>
         </div>
-        <div className={useScroll < 800 ? "right" : "right open"}>
+        <div className={useScroll < 900 ? "right" : "right open"}>
           <ul>
             {javascript.map((item) => (
               <li key={item.id}>{item.text}</li>
@@ -88,14 +88,14 @@ function About() {
         </div>
       </div>
       <div className="box react">
-        <div className={useScroll < 1100 ? "left" : "left open"}>
+        <div className={useScroll < 1200 ? "left" : "left open"}>
           <span>
             SPA Framework /
             <br />
             Library React
           </span>
         </div>
-        <div className={useScroll < 1100 ? "right" : "right open"}>
+        <div className={useScroll < 1200 ? "right" : "right open"}>
           <ul>
             {react.map((item) => (
               <li key={item.id}>{item.text}</li>
@@ -104,10 +104,10 @@ function About() {
         </div>
       </div>
       <div className="box graphic">
-        <div className={useScroll < 1400 ? "left" : "left open"}>
+        <div className={useScroll < 1500 ? "left" : "left open"}>
           <span>Graphics & Design</span>
         </div>
-        <div className={useScroll < 1400 ? "right" : "right open"}>
+        <div className={useScroll < 1500 ? "right" : "right open"}>
           <ul>
             {graphics.map((item) => (
               <li key={item.id}>{item.text}</li>
@@ -116,10 +116,10 @@ function About() {
         </div>
       </div>
       <div className="box git">
-        <div className={useScroll < 1700 ? "left" : "left open"}>
+        <div className={useScroll < 1800 ? "left" : "left open"}>
           <span>Git & Github</span>
         </div>
-        <div className={useScroll < 1700 ? "right" : "right open"}>
+        <div className={useScroll < 1800 ? "right" : "right open"}>
           <ul>
             {gitserver.map((item) => (
               <li key={item.id}>{item.text}</li>
