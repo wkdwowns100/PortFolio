@@ -80,7 +80,7 @@
 - AutoTyped 구현 시 기존 사용했었던 JS가 적용되지 않음
 
 ```
-const h1 = document.querySelector('h2');
+const h1 = document.querySelector('h1');
     const text = '중요한것은 꺾이지 않는 마음';
 
     let i = 0;
