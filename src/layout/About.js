@@ -25,7 +25,7 @@ function About() {
     { id: 1, text: "함수 스타일의 컴포넌트 작성" },
     {
       id: 2,
-      text: "useState, useEffect, useNavigate, useRef 등의 Hook 활용",
+      text: "useState, useEffect, useRef 등의 Hook 활용",
     },
     {
       id: 3,

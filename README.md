@@ -21,7 +21,8 @@
 - SCSS
 - JavaScript
 - NodeJS
-- tool: GitHub(호스팅 및 백업), Visual Studio Code(문서작성 및 수정), Figma(와이어프레임 및 프로토타입 제작)
+- JSON
+- tool: GitHub(호스팅 및 백업), Visual Studio Code(문서작성 및 수정), Figma(와이어프레임 및 프로토타입 제작), adobe illustrator(파비콘 및 오픈그라피 제작)
 
 ## 페이지 구성
 
@@ -36,7 +37,7 @@
   ### `About`
 
   - 스크롤 이벤트를 이용한 오브젝트 이동
-  - position을 이용한 위치 조정
+  - flex, position을 이용한 위치 조정
 
   ### `Project`
 
