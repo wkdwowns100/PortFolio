@@ -18,21 +18,25 @@
 ## 사용한 기술
 
 - #### React
-- #### scss
+- #### SCSS
 - #### JavaScript
 - #### JSON
-- #### tool: GitHub(호스팅 및 백업), Visual Studio Code(문서작성 및 수정), Figma(와이어프레임 및 프로토타입 제작), Adobe Illustrator(파비콘 및 오픈그라피 제작)
+- #### Tool
+  - GitHub(호스팅 및 백업)
+  - Visual Studio Code(문서작성 및 수정)
+  - Figma(와이어프레임 및 프로토타입 제작)
+  - Adobe Illustrator(파비콘 및 오픈그라피 제작)
 
 ## 페이지 구성
 
-- #### 1개의 페이지 안에 Home, About, Project, Contact 의 4가지의 레이아웃으로 구성
+- ### 1개의 페이지 안에 Home, About, Project, Contact 의 4가지의 레이아웃으로 구성
 
   ### `Header`
 
   - **position fixed**를 이용하여 헤더 고정
-  - Header에 Navigation 및 더보기 작성
-  - 더보기를 통한 큰 화면의 Navigation의 경우 JS를 이용하여 **클릭이벤트** 사용
-  - `<Link>`를 통해 해당 영역으로 이동
+  - Header에 **Navigation** 메뉴 및 아이콘 작성
+  - 아이콘을 통한 큰 화면의 Navigation의 경우 JS를 이용하여 **클릭이벤트** 사용
+  - **Link**를 통해 해당 영역으로 이동
 
   ### `Home`
 
@@ -43,6 +47,7 @@
 
   ### `About`
 
+  - **JSON 객체 배열** 이용
   - map() 함수, 삼항연산자 등의 **JSX**를 사용하여 레이아웃 구성
   - **스크롤 이벤트**(Y좌표)를 이용한 오브젝트 가로방향 이동
   - **flex, position**을 이용한 위치 조정
