@@ -75,13 +75,13 @@
 
 ---
 
-- #### Home의 3D 큐브 작업 시 react의 3d-cube, three 등을 사용하여 구현해야 했음
-  - `빠른시간에 지식 습득 및 구현이 어려워, SCSS의 애니메이션으로 작성`
+- #### Home의 3D 큐브 작업 시의 어려움
+  - `react의 3d-cube, three 등을 사용하여 구현해야 했으나 빠른시간에 지식 습득 및 구현이 어려워, SCSS의 애니메이션으로 대체하여 작성`
   - `애니메이션이 구동되기는 했으나 3차원적인 빛의 방향이 표현되지 않음. 추후 다른 프로젝트에서 구현해 볼 예정`
 
 ---
 
-- #### AutoTyped 구현 시 기존 사용했었던 JS가 적용되지 않음
+- #### AutoTyped 구현 시 기존에 사용했던 JS가 적용되지 않음
 
 ```
 const h1 = document.querySelector('h1');
@@ -130,7 +130,7 @@ import { useEffect, useRef } from "react";
 
 ---
 
-- #### 마우스 좌표에 따른 이벤트를 넣고자 useEffect를 사용하였으나 작동하지 않음.
+- #### 마우스 좌표에 따른 이벤트를 넣고자 useEffect를 사용하였으나 작동하지 않음
 
 ```
   const [handleX, setHandleX] = useState(0);
