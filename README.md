@@ -4,7 +4,7 @@
 
 ## 목적
 
-포트폴리오 제작을 통해 간단한 자기소개 및 기술, 진행한 프로젝트를 소개
+포트폴리오 제작을 통해 간단한 자기소개 및 현재의 지식과 기술, 진행한 프로젝트를 소개
 
 ## 포트폴리오의 구성
 
@@ -32,7 +32,7 @@
   - **position fixed**를 이용하여 헤더 고정
   - Header에 Navigation 및 더보기 작성
   - 더보기를 통한 큰 화면의 Navigation의 경우 JS를 이용하여 **클릭이벤트** 사용
-  - <<Link>>를 통해 해당 영역으로 이동
+  - `<Link>`를 통해 해당 영역으로 이동
 
   ### `Home`
 
@@ -44,7 +44,7 @@
   ### `About`
 
   - map() 함수, 삼항연산자 등의 **JSX**를 사용하여 레이아웃 구성
-  - **스크롤 이벤트(Y좌표)**를 이용한 오브젝트 가로방향 이동
+  - **스크롤 이벤트**(Y좌표)를 이용한 오브젝트 가로방향 이동
   - **flex, position**을 이용한 위치 조정
 
   ### `Project`
@@ -65,14 +65,14 @@
 
 ## 문제 및 해결
 
-- #### Navigation 영역 링크를 클릭하여 이동시 react-router-dom의 Link를 사용하는데에 있어 각 영역의 제목이 헤더에 가려지는 현상 발생
-  `- scss를 이용하여 해당 영역의 상부 여백조정을 통해 제목이 가려지지 않게 구성`
+- #### Navigation의 메뉴 이용 시 react-router-dom의 Link를 사용할 때 각 영역의 제목이 헤더영역에 가려지는 현상 발생
+  - `scss를 이용하여 해당 영역의 상부 여백조정을 통해 제목이 가려지지 않게 구성`
 
 ---
 
 - #### Home의 3D 큐브 작업 시 react의 3d-cube, three 등을 사용하여 구현해야 했음
-  `- 빠른시간에 지식 습득 및 구현할 수 없어 scss의 애니메이션으로 작성`
-  `- 애니메이션이 구동되기는 했으나 빛의 방향 등 색감이 원하는데로 표현되지 않음. 추후 다른 프로젝트에서 구현해 볼 예정`
+  - `빠른시간에 지식 습득 및 구현이 어려워, SCSS의 애니메이션으로 작성`
+  - `애니메이션이 구동되기는 했으나 빛의 방향이 표현되지 않음. 추후 다른 프로젝트에서 구현해 볼 예정`
 
 ---
 
@@ -96,13 +96,13 @@ const h1 = document.querySelector('h1');
     })();
 ```
 
-`- typed.js를 이용하여 자동완성 및 변화 구현`
+- `typed.js를 이용하여 자동완성 및 변화 구현`
 
 ```
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
-const el = useRef(null);
+  const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
@@ -128,49 +128,71 @@ const el = useRef(null);
 - #### 마우스 좌표에 따른 이펙트를 넣고자 useEffect를 사용하였으나 작동하지 않음.
 
 ```
+  const [handleX, setHandleX] = useState(0);
+  const [handleY, setHandleY] = useState(0);
+
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
-      setPosX(e.clientX);
-      setPosY(e.clientY);
-      cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
-      cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
-      cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
-        -posY / 20
+      setHandleX(e.clientX);
+      setHandleY(e.clientY);
+      cubeTxt1.style.transform = `translate(${handleX / 30}px, ${
+        handleY / 20
+      }px)`;
+      cubeTxt2.style.transform = `translate(${-handleY / -20}px, ${
+        handleX / 40
+      }px)`;
+      cubeTxt3.style.transform = `translate(${30 - handleX / 20}px, ${
+        -handleY / 20
       }px)`;
     });
     return window.removeEventListener("mousemove", (e) => {
-      setPosX(e.clientX);
-      setPosY(e.clientY);
-      cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
-      cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
-      cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
-        -posY / 20
+      setHandleX(e.clientX);
+      setHandleY(e.clientY);
+      cubeTxt1.style.transform = `translate(${handleX / 30}px, ${
+        handleY / 20
+      }px)`;
+      cubeTxt2.style.transform = `translate(${-handleY / -20}px, ${
+        handleX / 40
+      }px)`;
+      cubeTxt3.style.transform = `translate(${30 - handleX / 20}px, ${
+        -handleY / 20
       }px)`;
     });
   }, []);
 ```
 
-`- useCallback으로 변하는좌표를 콜백하여 해결`
+- `이벤트의 원인인 x, y좌표의 변동값을 콜백하여 해결`
 
 ```
-useEffect(() => {
-  window.addEventListener("mousemove", (e) => {
-    setPosX(e.clientX);
-    setPosY(e.clientY);
-    cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
-    cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
-    cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
-      -posY / 20
-    }px)`;
-  });
-  return window.removeEventListener("mousemove", (e) => {
-    setPosX(e.clientX);
-    setPosY(e.clientY);
-    cubeTxt1.style.transform = `translate(${posX / 30}px, ${posY / 20}px)`;
-    cubeTxt2.style.transform = `translate(${-posY / -20}px, ${posX / 40}px)`;
-    cubeTxt3.style.transform = `translate(${30 - posX / 20}px, ${
-      -posY / 20
-    }px)`;
-  });
-}, [posX, posY]);
+  const [handleX, setHandleX] = useState(0);
+  const [handleY, setHandleY] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("mousemove", (e) => {
+      setHandleX(e.clientX);
+      setHandleY(e.clientY);
+      cubeTxt1.style.transform = `translate(${handleX / 30}px, ${
+        handleY / 20
+      }px)`;
+      cubeTxt2.style.transform = `translate(${-handleY / -20}px, ${
+        handleX / 40
+      }px)`;
+      cubeTxt3.style.transform = `translate(${30 - handleX / 20}px, ${
+        -handleY / 20
+      }px)`;
+    });
+    return window.removeEventListener("mousemove", (e) => {
+      setHandleX(e.clientX);
+      setHandleY(e.clientY);
+      cubeTxt1.style.transform = `translate(${handleX / 30}px, ${
+        handleY / 20
+      }px)`;
+      cubeTxt2.style.transform = `translate(${-handleY / -20}px, ${
+        handleX / 40
+      }px)`;
+      cubeTxt3.style.transform = `translate(${30 - handleX / 20}px, ${
+        -handleY / 20
+      }px)`;
+    });
+  }, [handleX, handleY]);
 ```
