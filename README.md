@@ -41,7 +41,7 @@
   ### `Home`
 
   - **flex, position**을 이용한 레이아웃 구성
-  - scss를 이용한 **3D 애니메이션** 사용
+  - SCSS를 이용한 **3D 애니메이션** 사용
   - JS를 이용한 **마우스좌표 이벤트**
   - **typed.js를 이용한 autoType** 구현
 
@@ -60,7 +60,7 @@
   ### `Contact`
 
   - **flex**를 이용한 레이아웃 구성
-  - scss를 이용한 **마우스 hover 이벤트 및 외부링크**
+  - SCSS를 이용한 **마우스 hover 이벤트 및 외부링크**
   - **typed.js를 이용한 autoType** 구현
 
   ### `Footer`
