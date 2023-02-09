@@ -17,9 +17,9 @@
 
 ## 사용한 기술
 
-- #### React
+- #### SPA Framework / Library React
 - #### SCSS
-- #### JavaScript
+- #### JavaScript (ES6+)
 - #### JSON
 - #### Tool
   - GitHub(호스팅 및 백업)
