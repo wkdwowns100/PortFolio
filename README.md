@@ -130,7 +130,7 @@ import { useEffect, useRef } from "react";
 
 ---
 
-- #### 마우스 좌표에 따른 이펙트를 넣고자 useEffect를 사용하였으나 작동하지 않음.
+- #### 마우스 좌표에 따른 이벤트를 넣고자 useEffect를 사용하였으나 작동하지 않음.
 
 ```
   const [handleX, setHandleX] = useState(0);
@@ -166,7 +166,7 @@ import { useEffect, useRef } from "react";
   }, []);
 ```
 
-- `이벤트의 원인인 x, y좌표의 변동값을 콜백하여 해결`
+- `마우스의 좌표값에 따라 이벤트가 발생하므로 x, y좌표의 변동값을 콜백하여 해결`
 
 ```
   const [handleX, setHandleX] = useState(0);
