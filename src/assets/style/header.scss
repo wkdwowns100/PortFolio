@@ -24,6 +24,12 @@ header {
         padding: 10px 20px;
         height: 100%;
         line-height: 80px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          margin-right: 20px;
+        }
       }
       &:hover {
         color: #a5a1ff;

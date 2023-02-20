@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
+import logoImg from "../assets/images/logo2.png";
 import "../assets/style/header.scss";
 
 function Header() {
@@ -15,7 +16,7 @@ function Header() {
       <ul>
         <li>
           <Link to="home" smooth={true}>
-            home
+            <img src={logoImg} alt="로고" /> home
           </Link>
         </li>
         <li>

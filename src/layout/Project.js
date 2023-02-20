@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../assets/style/project.scss";
 
 function Project() {
@@ -5,12 +6,12 @@ function Project() {
     {
       id: 1,
       num: "01.",
-      title: "LoaToy",
+      title: "easyLoA",
       category: "ToyProject",
       tag1: "react",
       tag2: "local Storage",
       imgURL: "/images/project1.png",
-      url: "",
+      url: "/project1",
     },
     {
       id: 2,
@@ -20,7 +21,7 @@ function Project() {
       tag1: "javascript",
       tag2: "clone coding",
       imgURL: "",
-      url: "",
+      url: "/project2",
     },
     {
       id: 3,
@@ -30,7 +31,7 @@ function Project() {
       tag1: "react",
       tag2: "swipe",
       imgURL: "",
-      url: "",
+      url: "/project3",
     },
     {
       id: 4,
@@ -40,7 +41,7 @@ function Project() {
       tag1: "graphic",
       tag2: "prototype",
       imgURL: "",
-      url: "",
+      url: "/project4",
     },
   ];
 
@@ -55,9 +56,9 @@ function Project() {
             <div className="num">{item.num}</div>
             <div className="projectName">{item.title}</div>
             <div className="img">
-              <a href={item.url}>
+              <Link to={item.url}>
                 <img src={path + item.imgURL} alt={item.title} />
-              </a>
+              </Link>
             </div>
             <div className="category">{item.category}</div>
             <div className="tag">

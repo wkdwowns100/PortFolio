@@ -41,7 +41,11 @@ function Contact() {
           <div className="linkMe">
             <div className="myName">Jang Jae Jun</div>
             <div className="social">
-              <a href={kakaoQR} target="_blank" rel="noopener noreferrer">
+              <a
+                href={kakaoQR}
+                target="_blank"
+                rel="noopenner noreferrer nofollow"
+              >
                 kakaotalk
               </a>
             </div>
@@ -73,7 +77,7 @@ function Contact() {
           <a
             href="https://github.com/wkdwowns100/PortFolio"
             target="_blank"
-            rel="noreferrer"
+            rel="noopenner noreferrer nofollow"
           >
             About My PortFolio <img src={rightArrow} alt="화살표" />
           </a>
