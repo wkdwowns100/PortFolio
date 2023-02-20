@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PortFolio/static/css/main.4600dd28.css",
-    "main.js": "/PortFolio/static/js/main.c0e32b1d.js",
+    "main.js": "/PortFolio/static/js/main.fffcea68.js",
     "static/media/PretendardVariable.woff2": "/PortFolio/static/media/PretendardVariable.36b3a87cd98126711b2b.woff2",
     "static/media/project1Preview.png": "/PortFolio/static/media/project1Preview.a273f3bb757f008f6c03.png",
     "static/media/kakaoQR.jpg": "/PortFolio/static/media/kakaoQR.7a37c120a1a13646420b.jpg",
@@ -15,10 +15,10 @@
     "static/media/up.svg": "/PortFolio/static/media/up.51882d100119b9c2497b.svg",
     "static/media/rightArrow.svg": "/PortFolio/static/media/rightArrow.715d016303e99b31ef3ad47d460ba2b8.svg",
     "main.4600dd28.css.map": "/PortFolio/static/css/main.4600dd28.css.map",
-    "main.c0e32b1d.js.map": "/PortFolio/static/js/main.c0e32b1d.js.map"
+    "main.fffcea68.js.map": "/PortFolio/static/js/main.fffcea68.js.map"
   },
   "entrypoints": [
     "static/css/main.4600dd28.css",
-    "static/js/main.c0e32b1d.js"
+    "static/js/main.fffcea68.js"
   ]
 }
