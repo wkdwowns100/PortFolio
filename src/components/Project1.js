@@ -16,19 +16,21 @@ function Project1(props) {
         <div className="left">
           <h1 className="title">easyLoA</h1>
           <h2>
-            평소에 즐겨하는 MMORPG게임인 <span>Lost Ark</span>의 주간 및 일일
-            컨텐츠의
+            평소에 즐겨하는 MMORPG게임인 <span>Lost Ark</span>의
           </h2>
+          <h2>주간 및 일일 컨텐츠의 달성도 및 주요 레이드의 공략을 정리한 </h2>
           <h2>
-            달성도 및 주요 레이드의 공략을 쉽게 정리한{" "}
             <span className="kind">토이프로젝트</span> 입니다.
           </h2>
-          <h3>
-            육성 캐릭터가 늘어남에 따라, 반복되는 컨텐츠가 많아지게 되면서
-          </h3>
-          <h3>
-            기존에 존재하는 체크 사이트들을 참고하여 직접 만들어보게 되었습니다.
-          </h3>
+          <div className="description">
+            <h3>
+              육성 캐릭터가 늘어남에 따라, 반복되는 컨텐츠가 많아지게 되면서
+            </h3>
+            <h3>
+              기존에 존재하는 체크 사이트들을 참고하여 직접 만들어보게
+              되었습니다.
+            </h3>
+          </div>
         </div>
         <div className="right">
           <img src={Preview} alt="미리보기" />
@@ -122,18 +124,18 @@ function Project1(props) {
         </div>
         <div className="right">
           <h3>Open API 사용시 로스트 아크 서버와 실시간 연동 불가</h3>
-          <h4>제공된 JSON 파일을 이용하여 캐릭터 정보 연동</h4>
+          <h4>- 제공된 JSON 파일을 이용하여 캐릭터 정보 연동</h4>
           <h3>
             LocalStorage 사용시 체크리스트 정보를 원하는시간에 초기화 시키지
             못함
           </h3>
           <h4>
-            지정 시간에 초기화시키는 방법 대신 수동적으로 초기화를 위해 버튼을
+            - 지정 시간에 초기화시키는 방법 대신 수동적으로 초기화를 위해 버튼을
             생성{" "}
           </h4>
           <h3>주간컨텐츠와 일일컨텐츠의 LocalStorage 분리를 하지 못함</h3>
           <h4>
-            LocalStorage와 redux에 대한 추가적인 공부를 통해 보완 및 다른
+            - LocalStorage와 redux에 대한 추가적인 공부를 통해 보완 및 다른
             프로젝트에 적용해 볼 예정
           </h4>
           <div className="siteLink">
