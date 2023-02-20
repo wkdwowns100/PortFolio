@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./project1.scss";
 import logo from "../assets/images/logo1.png";
+import Preview from "../assets/images/project1Preview.png";
 
 function Project1(props) {
   return (
@@ -13,17 +14,25 @@ function Project1(props) {
       </header>
       <article className="preview">
         <div className="left">
-          <h1 className="title">Loa ToyProject</h1>
+          <h1 className="title">easyLoA</h1>
           <h2>
             평소에 즐겨하는 MMORPG게임인 <span>Lost Ark</span>의 주간 및 일일
             컨텐츠의
           </h2>
           <h2>
-            달성 현황 및 주요 레이드의 공략을 보기 쉽게 정리한{" "}
+            달성도 및 주요 레이드의 공략을 쉽게 정리한{" "}
             <span className="kind">토이프로젝트</span> 입니다.
           </h2>
+          <h3>
+            육성 캐릭터가 늘어남에 따라, 반복되는 컨텐츠가 많아지게 되면서
+          </h3>
+          <h3>
+            기존에 존재하는 체크 사이트들을 참고하여 직접 만들어보게 되었습니다.
+          </h3>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <img src={Preview} alt="미리보기" />
+        </div>
       </article>
       <article className="skills">
         <div className="left">
