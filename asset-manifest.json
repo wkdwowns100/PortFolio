@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PortFolio/static/css/main.70ffa42c.css",
-    "main.js": "/PortFolio/static/js/main.4ab93bff.js",
+    "main.css": "/PortFolio/static/css/main.dd7cb225.css",
+    "main.js": "/PortFolio/static/js/main.700136d1.js",
     "static/media/PretendardVariable.woff2": "/PortFolio/static/media/PretendardVariable.36b3a87cd98126711b2b.woff2",
     "static/media/kakaoQR.jpg": "/PortFolio/static/media/kakaoQR.7a37c120a1a13646420b.jpg",
     "static/media/github.png": "/PortFolio/static/media/github.f69a93ba6c0230edbecb.png",
@@ -11,11 +11,12 @@
     "static/media/name.svg": "/PortFolio/static/media/name.8a1766f9b853693df132dbc0fc121aea.svg",
     "index.html": "/PortFolio/index.html",
     "static/media/up.svg": "/PortFolio/static/media/up.51882d100119b9c2497b.svg",
-    "main.70ffa42c.css.map": "/PortFolio/static/css/main.70ffa42c.css.map",
-    "main.4ab93bff.js.map": "/PortFolio/static/js/main.4ab93bff.js.map"
+    "static/media/rightArrow.svg": "/PortFolio/static/media/rightArrow.715d016303e99b31ef3ad47d460ba2b8.svg",
+    "main.dd7cb225.css.map": "/PortFolio/static/css/main.dd7cb225.css.map",
+    "main.700136d1.js.map": "/PortFolio/static/js/main.700136d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.70ffa42c.css",
-    "static/js/main.4ab93bff.js"
+    "static/css/main.dd7cb225.css",
+    "static/js/main.700136d1.js"
   ]
 }
