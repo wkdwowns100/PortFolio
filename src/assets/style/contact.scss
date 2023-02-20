@@ -113,5 +113,23 @@
         }
       }
     }
+    .aboutPf {
+      position: absolute;
+      bottom: 50px;
+      right: 10vw;
+      background-color: #d4c951;
+      color: #000;
+      font-size: 1.4em;
+      padding: 10px 20px;
+      border-radius: 30vw;
+      transition: 0.4s;
+      &:hover {
+        transform: translateX(10px);
+      }
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
 }

@@ -5,7 +5,7 @@ function Project() {
     {
       id: 1,
       num: "01.",
-      title: "Loa Toy",
+      title: "LoaToy",
       category: "ToyProject",
       tag1: "react",
       tag2: "local Storage",
