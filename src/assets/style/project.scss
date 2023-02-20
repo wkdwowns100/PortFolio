@@ -24,6 +24,12 @@
       &:hover {
         scale: 0.95;
       }
+      .img {
+        transition: 0.4s;
+        &:hover {
+          scale: 1.2;
+        }
+      }
       .num {
         position: absolute;
         top: 40px;
@@ -65,7 +71,7 @@
       }
     }
     .project1 {
-      background-color: #fff;
+      background-color: #dbe797;
       color: #000;
       grid-row: 1 / 3;
     }
@@ -87,7 +93,7 @@
       color: #000;
     }
     .project4 {
-      background-color: #fff480;
+      background-color: #fff;
       color: #000;
       grid-column: 1 / 3;
     }

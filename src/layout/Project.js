@@ -5,20 +5,20 @@ function Project() {
     {
       id: 1,
       num: "01.",
-      title: "MetatoyDragonz",
-      category: "team Project",
-      tag1: "javascript",
-      tag2: "clone coding",
-      imgURL: "",
+      title: "Loa Toy",
+      category: "ToyProject",
+      tag1: "react",
+      tag2: "local Storage",
+      imgURL: "/images/project1.png",
       url: "",
     },
     {
       id: 2,
       num: "02.",
-      title: "project2",
-      category: "Publishing",
-      tag1: "html5&css3",
-      tag2: "redesign",
+      title: "MetatoyDragonz",
+      category: "team Project",
+      tag1: "javascript",
+      tag2: "clone coding",
       imgURL: "",
       url: "",
     },
@@ -43,6 +43,9 @@ function Project() {
       url: "",
     },
   ];
+
+  const path = process.env.PUBLIC_URL;
+
   return (
     <article className="project" id="project">
       <h1 className="title">What did I do?</h1>
@@ -53,7 +56,7 @@ function Project() {
             <div className="projectName">{item.title}</div>
             <div className="img">
               <a href={item.url}>
-                <img src={item.imgURL} alt={item.title} />
+                <img src={path + item.imgURL} alt={item.title} />
               </a>
             </div>
             <div className="category">{item.category}</div>

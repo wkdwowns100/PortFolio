@@ -33,7 +33,9 @@ function Contact() {
           <div className="middleTxt">
             <h2>포기하지 않고 끊임없이</h2>
             <h2>도전하고 노력하는</h2>
-            <h2>프론트엔드 개발자 장재준입니다.</h2>
+            <h2>
+              프론트엔드 개발자 <span>장재준</span>입니다.
+            </h2>
           </div>
           <div className="linkMe">
             <div className="myName">Jang Jae Jun</div>
