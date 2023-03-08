@@ -36,14 +36,67 @@ function Project1(props) {
           <img src={Preview} alt="미리보기" />
         </div>
       </article>
+      <article className="directory">
+        <div className="left">
+          <h2>Directory 구성</h2>
+        </div>
+        <div className="right">
+          <ul className="directoryList">
+            <li>
+              public
+              <ul className="public">
+                <li>index.html</li>
+                <li>images</li>
+              </ul>
+            </li>            
+            <li>src
+              <ul className="src">
+                <li>
+                  assets
+                  <ul className="srcInner">
+                    <li>fonts</li>
+                    <li>images</li>
+                    <li>json</li>
+                    <li>style</li>
+                  </ul>
+                </li>
+                <li>
+                  components
+                  <ul className="srcInner">
+                    <li>Abrelshud.js</li>
+                    <li>Characters.js</li>
+                    <li>CunningPaper.js</li>
+                    <li>CunningPaperList.js</li>
+                    <li>Homework.js</li>
+                    <li>Illiakan.js</li>
+                    <li>KakulSaydon.js</li>
+                    <li>Lauriel.js</li>
+                    <li>Valtan.js</li>
+                    <li>Vykas.js</li>
+                  </ul>
+                </li>
+                <li>
+                  layout
+                  <ul className="srcInner">
+                    <li>Header.js</li>
+                    <li>Footer.js</li>
+                  </ul>
+                </li>
+                <li>App.js</li>
+                <li>index.js</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
       <article className="skills">
         <div className="left">
-          <h2>Key Word</h2>
-          <ul>
-            <li># ReactComponent</li>
-            <li># OpenAPI</li>
-            <li># LocalStorage</li>
-          </ul>
+          <h2>Keyword</h2>
+          <div className="hashTag">
+            <span># ReactComponent</span>
+            <span># OpenAPI</span>
+            <span># LocalStorage</span>
+          </div>
         </div>
         <div className="right">
           <ul>
@@ -104,17 +157,27 @@ function Project1(props) {
           </div>
         </div>
       </article>
-      <article className="publishing">
+      <article className="page">
         <div className="left">
-          <h2>Publishing</h2>
+          <h2>페이지 구성</h2>
         </div>
         <div className="right">
+          <h3>숙제 체크리스트</h3>
           <ul>
             <li>table을 이용한 캐릭터별 컨텐츠 정리</li>
             <li>chrome 브라우저 최적화 및 LocalStorage 사용</li>
+            <li>JSON, map() 함수를 이용한 데이터 리스트 구성</li>
+          </ul>
+          <h3>레이드 공략</h3>
+          <ul>
+            <li>SPA 구성</li>            
+            <li>useState, Math 함수를 이용한 경매 최저가 입찰 계산기 구현</li>
+          </ul>
+          <h3>캐릭터 정보</h3>
+          <ul>
+            <li>Lost Ark 오픈 API를 이용한 JSON파일을 사용하여 캐릭터 정보 불러오기</li>
             <li>grid를 이용한 레이아웃 구성</li>
-            <li>JSX, API를 이용한 웹 제작</li>
-            <li>JSON, map()함수를 이용한 레이아웃 구성</li>
+            <li>외부링크를 이용한 전투정보실 이동</li>
           </ul>
         </div>
       </article>
@@ -124,15 +187,14 @@ function Project1(props) {
         </div>
         <div className="right">
           <h3>Open API 사용시 로스트 아크 서버와 실시간 연동 불가</h3>
+          <h4>- 기존에 존재하는 다른 홈페이지의 경우 Open API 제공 전에 제작되었으며 크롤링을 통해 만들어져 있음</h4>
           <h4>- 제공된 JSON 파일을 이용하여 캐릭터 정보 연동</h4>
           <h3>
             LocalStorage 사용시 체크리스트 정보를 원하는시간에 초기화 시키지
             못함
           </h3>
-          <h4>
-            - 지정 시간에 초기화시키는 방법 대신 수동적으로 초기화를 위해 버튼을
-            생성{" "}
-          </h4>
+          <h4>- 시작시점부터 시간의 범위를 맞춰놓은 시간에만 초기화 가능</h4>
+          <h4>- 지정 시간에 초기화시키는 방법 대신 수동적으로 초기화를 위해 버튼을 생성</h4>
           <h3>주간컨텐츠와 일일컨텐츠의 LocalStorage 분리를 하지 못함</h3>
           <h4>
             - LocalStorage와 redux에 대한 추가적인 공부를 통해 보완 및 다른
