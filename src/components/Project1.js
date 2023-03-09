@@ -202,7 +202,7 @@ function Project1(props) {
           </h4>
           <div className="siteLink">
             <a
-              href="https://wkdwowns100.github.io/easyLoA"
+              href="https://wkdwowns100.github.io/project1_easyLoa"
               target="_blank"
               rel="noopenner noreferrer nofollow"
             >
