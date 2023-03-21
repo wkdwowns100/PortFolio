@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import kakaoQR from "../assets/images/kakaoQR.jpg";
-import rightArrow from "../assets/images/rightArrow.svg";
 import "../assets/style/contact.scss";
 
 function Contact() {
@@ -72,15 +71,6 @@ function Contact() {
             <li>충북대학교 졸업</li>
             <li>22-23 프론트엔드 개발 및 실무프로젝트 구현과정 수료</li>
           </ul>
-        </div>
-        <div className="aboutPf">
-          <a
-            href="https://github.com/wkdwowns100/PortFolio"
-            target="_blank"
-            rel="noopenner noreferrer nofollow"
-          >
-            About My PortFolio <img src={rightArrow} alt="화살표" />
-          </a>
         </div>
       </div>
     </article>

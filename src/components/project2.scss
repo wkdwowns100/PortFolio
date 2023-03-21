@@ -1,0 +1,263 @@
+@import url(../assets/fonts/font.scss);
+.project2 {
+  header {
+    display: flex;
+    justify-content: flex-start;
+    a {
+      margin: 10vw;
+      img {
+        width: 200px;
+      }
+    }
+  }
+  article {
+    width: 80vw;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 20vh 0;
+    .left {
+      width: 35vw;
+      h2 {
+        font-weight: 600;
+        font-size: 4em;
+        padding: 50px;
+        padding-right: 0;
+      }
+    }
+    .right {
+      width: 45vw;
+      h3 {
+        margin-top: 50px;
+        font-size: 1.4em;
+      }
+    }
+  }
+  .preview {
+    padding: 15vh 0 20vh;
+    .left {
+      h1 {
+        font-size: 5em;
+        margin: 3vw 0;
+        color: #FBA800;
+        span {
+          color: #CE3707;
+        }
+      }
+      h2 {
+        font-size: 1.4em;
+        padding: 5px 0;
+        span {
+          font-weight: 600;
+          font-size: 1.5em;
+          color: #dbe797;
+          line-height: bottom;
+        }
+        .kind {
+          color: #a5a1ff;
+        }
+      }
+      .description {
+        padding-top: 50px;
+        h3 {
+          font-weight: 400;
+          font-size: 1.2em;
+          padding: 5px 0;
+        }
+        ul {
+          list-style: decimal;
+          li {
+            padding: 3px 0;
+          }
+        }
+      }
+    }
+    .right {
+      width: 45vw;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 65%;
+      }
+    }
+  }
+  .directory {
+    .right {
+      font-size: 1.1em;
+      li {
+        list-style: circle;
+        padding-top: 10px;
+      }
+    }
+  }
+  .skills {
+    display: flex;
+    align-items: center;
+    .left {
+      display: block;
+      .hashTag {
+        span {
+          margin: 10px;
+          font-size: 1.2em;
+          padding: 10px 20px;
+          border: 1px solid #fff;
+          margin: 10px;
+          border-radius: 45px;
+          &:nth-child(1) {
+            margin-left: 30px;  
+          }
+        }      
+      }
+    }
+    .right {
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      ul {
+        padding-top: 100px;
+        list-style: circle;
+        li {
+          padding: 10px 0;
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+  .design {
+    padding-bottom: 10vh;
+    .left {
+      padding-bottom: 200px;
+      h3 {
+        padding: 10px 0 10px 50px;
+        font-size: 1.2em;
+      }
+    }
+    .right {
+      .color {
+        margin-bottom: 50px;
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            text-align: center;
+            div {
+              overflow: hidden;
+              width: 150px;
+              height: 150px;
+              background-color: #c5ed8c;
+              border-radius: 75px;
+              text-indent: 9999px;
+              margin-bottom: 10px;
+              margin-right: -40px;
+            }
+            &:nth-child(2) {
+              div {
+                background-color: #28ad57;
+              }
+            }
+            &:nth-child(3) {
+              div {
+                background-color: #0f8136;
+              }
+            }
+            &:nth-child(4) {
+              div {
+                background-color: #458964;
+              }
+            }
+            &:nth-child(5) {
+              div {
+                background-color: #43c06f;
+              }
+            }
+            &:nth-child(6) {
+              div {
+                background-color: #358d54;
+              }
+            }
+            span {
+              font-size: 1em;
+              margin-right: -40px;
+            }
+          }
+        }
+      }
+      .font {
+        padding-left: 10vw;
+        h3 {
+          font-size: 2.3em;
+          padding: 20px 0;
+        }
+        span {
+          display: block;
+          font-size: 1.4em;
+          margin: 3px 0;
+        }
+        .notoSans {
+          font-family: "Noto Sans KR";
+        }
+        .pretendard {
+          font-family: "Pretendard";
+        }
+      }
+      .img {
+        font-size: 1.4em;
+        margin-left: 10vw;
+        margin-top: 50px;
+        h3 {
+          margin: 20px 0;
+        }
+        span {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  .page {
+    .right {
+      margin: 0 auto;      
+      ul {
+        margin-bottom: 30px 0;
+        li {
+          padding: 5px;
+        }
+      }
+    }
+  }
+  .review {
+    margin-bottom: 50px;
+    position: relative;
+    .right {
+      ul {
+        font-weight: 600;
+        list-style: circle;
+        li {
+          padding: 20px 0;
+          font-size: 1.4em;
+          .edit {
+            list-style: none;
+            li {
+              font-weight: normal;
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+      .siteLink {
+        position: absolute;
+        border: 1px solid #fff;
+        font-size: 1.4em;
+        padding: 10px 20px;
+        border-radius: 10vw;
+        transition: 0.2s;
+        right: 8vw;
+        bottom: 6vh;
+        &:hover {
+          background-color: #fff;
+          color: #111;
+        }
+      }
+    }
+  }
+}
